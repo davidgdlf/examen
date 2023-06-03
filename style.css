@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#index-container {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.index-list {
+  list-style-type: none;
+}
+
+.index-list li {
+  margin-bottom: 10px;
+}
+
+.index-list li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.index-list li a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+div[id^="section"] {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+td {
+  color: #333;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #eaf4ff;
+}
+
+#table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-image: url('fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+#mano {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.carta {
+  width: 100px;
+  height: 150px;
+  border: 1px solid black;
+  background-color: white;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 150px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+#boton {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.logo {
+  width: 600px;
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  #table {
+    overflow: auto;
+  }
+
+  #mano {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carta {
+    width: 80px;
+    height: 120px;
+    font-size: 14px;
+    line-height: 120px;
+    margin-bottom: 10px;
+  }
+
+  #boton {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 400px;
+  }
+}
+
